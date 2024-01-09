@@ -1,0 +1,127 @@
+/* xs */
+/* @media (min-width: 375px) {
+} */  
+
+/* sm */
+/* @media (min-width: 640px) {
+} */
+
+/* md */
+/* @media (min-width: 768px) {
+} */
+
+/* lg */
+/* @media (min-width: 1024px) {
+} */
+
+/* xl */
+/* @media (min-width: 1280px) {
+} */
+
+/* 2xl */
+/* @media (min-width: 1440px) {
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap');
+
+:root {
+
+  /* colour */
+  --clr-greyishblue: hsl(218, 23%, 81%);
+  --clr-light: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 47%);
+  --clr-darkblue: hsl(218, 44%, 22%); 
+
+  /* size */
+  --size-sm: 0.9rem;
+  --size-lg: 1rem;
+  --size-xl: 1.125rem;
+  --size-2xl: 1.25rem;
+  --size-3xl: 1.5rem;
+  --size-4xl: 1.625rem;
+
+  /* font-family */
+  --font-title: 'Outfit', sans-serif;
+  --font-text: 'Outfit', sans-serif;
+
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-text);
+  background-color: var(--clr-greyishblue);
+  color: var(--clr-grey);
+  font-size: var(--size-sm);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  user-select: none;
+}
+
+/* xs */
+@media (min-width: 375px) {
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    width: 80%;
+    background-color: var(--clr-light);
+    padding: 2rem;
+    border-radius: 2rem;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .imgcontainer {
+    width: 100%;
+    border-radius: 2rem;
+  }
+  
+  .container__title {
+    font-weight: 800;
+    font-size: var(--size-4xl);
+    color: var(--clr-darkblue);
+  }
+  
+  .attribution { 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 11px; 
+    text-align: center; 
+  }
+  
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+  }
+}  
+
+/* 2xl */
+@media (min-width: 1440px) {
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 30%;
+  }
+} 
